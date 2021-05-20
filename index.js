@@ -104,12 +104,10 @@ function createEvent(auth) {
     location: "CG 84, 2nd Floor, Sector 2, Salt Lake, Kolkata - 700091 ",
     description: "Signing a Deal",
     start: {
-      dateTime: "2021-05-22T09:00:00-05:30",
-      timeZone: "Asia/Dili",
+      dateTime: "2021-05-21T03:30:00.000Z"
     },
     end: {
-      dateTime: "2021-05-22T17:00:00-05:30",
-      timeZone: "Asia/Dili",
+      dateTime: "2021-05-21T04:00:00.000Z"
     },
     reminders: {
       useDefault: false,
@@ -128,10 +126,10 @@ function createEvent(auth) {
       console.log(`There was an error contacting the Calendar service: ${err}`)
       return
     }
-    console.log("Event created: %s", eventJson.htmlLink)
+    console.log("Event created: %s", eventJson)
   })
 }
 
 // Authorize a client with credentials, then call the Google Calendar API.
-authorize(listEvents)
-// authorize(createEvent)
+// authorize(listEvents)
+authorize(createEvent)
