@@ -1,0 +1,33 @@
+{
+  "name": "google-calendar-integration",
+  "version": "1.0.0",
+  "description": "POC to Create Events on Google Calendar with OAuth",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:quiet",
+    "lint:fix": "eslint './**/*.js' --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boseprasanta/google-calendar-integration.git"
+  },
+  "keywords": [
+    "google-calendar",
+    "node.js"
+  ],
+  "author": "boseprasanta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boseprasanta/google-calendar-integration/issues"
+  },
+  "homepage": "https://github.com/boseprasanta/google-calendar-integration#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "googleapis": "^39.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2"
+  }
+}
